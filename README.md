@@ -303,3 +303,9 @@ test data files: Copyright © 2011 ExactData, LLC, All Rights Reserved.
   Insider Threat Data*. IEEE Security and Privacy Workshops.
 
 Code: [MIT](LICENSE).
+
+<!-- portfolio-footer -->
+
+---
+
+<sub>Part of a cybersecurity & AI engineering portfolio: [FlowGuard](https://github.com/hugo-kte/flowguard-nids) (network IDS) · [Detection-as-code](https://github.com/hugo-kte/detection-as-code) (Sigma rules) · **Insider-threat UEBA** · [AlertLens](https://github.com/hugo-kte/alertlens) (SOC triage) · [PromptWall](https://github.com/hugo-kte/promptwall) (LLM firewall) · [MLSeal](https://github.com/hugo-kte/secure-mlops-pipeline) (secure MLOps) · [Gleaner](https://github.com/hugo-kte/cti-to-stix) (CTI to STIX).</sub>
