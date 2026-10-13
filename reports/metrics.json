@@ -1,0 +1,634 @@
+{
+  "generated_at": "2026-10-13T12:09:08+00:00",
+  "warmup_days": 60,
+  "period": [
+    "2010-03-03",
+    "2011-05-17"
+  ],
+  "base_rates": {
+    "users": 989,
+    "roles": 42,
+    "insiders": 70,
+    "days": 441,
+    "user_days": 287468,
+    "malicious_user_days_in_answer_key": 966,
+    "malicious_user_days": 966,
+    "share_malicious": 0.0033603740242392197
+  },
+  "random_baseline": {
+    "user_level": {
+      "roc_auc": 0.5,
+      "insiders_in_top_10": 0.71,
+      "insiders_in_top_25": 1.77,
+      "insiders_in_top_50": 3.54,
+      "insiders_in_top_100": 7.08
+    },
+    "day_level": {
+      "average_precision": 0.0033603740242392197
+    },
+    "daily_budget": {
+      "5": {
+        "budget_per_day": 5,
+        "scenario_1": {
+          "insiders": 30,
+          "expected_caught": 1.42
+        },
+        "scenario_2": {
+          "insiders": 30,
+          "expected_caught": 4.74
+        },
+        "scenario_3": {
+          "insiders": 10,
+          "expected_caught": 0.11
+        },
+        "expected_caught_total": 6.26,
+        "insiders_total": 70
+      },
+      "10": {
+        "budget_per_day": 10,
+        "scenario_1": {
+          "insiders": 30,
+          "expected_caught": 2.78
+        },
+        "scenario_2": {
+          "insiders": 30,
+          "expected_caught": 8.58
+        },
+        "scenario_3": {
+          "insiders": 10,
+          "expected_caught": 0.21
+        },
+        "expected_caught_total": 11.58,
+        "insiders_total": 70
+      }
+    }
+  },
+  "detectors": {
+    "rules": {
+      "user_level": {
+        "roc_auc": 0.7580988652261775,
+        "insiders_in_top_10": 5,
+        "insiders_in_top_25": 17,
+        "insiders_in_top_50": 27,
+        "insiders_in_top_100": 42
+      },
+      "day_level": {
+        "average_precision": 0.0071970250366174375,
+        "roc_auc": 0.5459821493157856
+      },
+      "daily_budget": {
+        "5": {
+          "budget_per_day": 5,
+          "scenario_1": {
+            "insiders": 30,
+            "caught": 13,
+            "median_delay_days": 0.0
+          },
+          "scenario_2": {
+            "insiders": 30,
+            "caught": 2,
+            "median_delay_days": 29.5
+          },
+          "scenario_3": {
+            "insiders": 10,
+            "caught": 3,
+            "median_delay_days": 0.0
+          },
+          "caught_total": 18,
+          "insiders_total": 70,
+          "reviews_total": 2186,
+          "reviews_on_malicious_days": 39,
+          "reviewed_during_incident_total": 21
+        },
+        "10": {
+          "budget_per_day": 10,
+          "scenario_1": {
+            "insiders": 30,
+            "caught": 15,
+            "median_delay_days": 0.0
+          },
+          "scenario_2": {
+            "insiders": 30,
+            "caught": 3,
+            "median_delay_days": 6.0
+          },
+          "scenario_3": {
+            "insiders": 10,
+            "caught": 7,
+            "median_delay_days": 0.0
+          },
+          "caught_total": 25,
+          "insiders_total": 70,
+          "reviews_total": 4129,
+          "reviews_on_malicious_days": 65,
+          "reviewed_during_incident_total": 29
+        }
+      }
+    },
+    "self": {
+      "user_level": {
+        "roc_auc": 0.8130110368412872,
+        "insiders_in_top_10": 9,
+        "insiders_in_top_25": 15,
+        "insiders_in_top_50": 24,
+        "insiders_in_top_100": 30
+      },
+      "day_level": {
+        "average_precision": 0.01836336546035013,
+        "roc_auc": 0.7682119797891127
+      },
+      "daily_budget": {
+        "5": {
+          "budget_per_day": 5,
+          "scenario_1": {
+            "insiders": 30,
+            "caught": 8,
+            "median_delay_days": 0.0
+          },
+          "scenario_2": {
+            "insiders": 30,
+            "caught": 24,
+            "median_delay_days": 7.0
+          },
+          "scenario_3": {
+            "insiders": 10,
+            "caught": 8,
+            "median_delay_days": 0.0
+          },
+          "caught_total": 40,
+          "insiders_total": 70,
+          "reviews_total": 2204,
+          "reviews_on_malicious_days": 76,
+          "reviewed_during_incident_total": 45
+        },
+        "10": {
+          "budget_per_day": 10,
+          "scenario_1": {
+            "insiders": 30,
+            "caught": 11,
+            "median_delay_days": 0.0
+          },
+          "scenario_2": {
+            "insiders": 30,
+            "caught": 27,
+            "median_delay_days": 5.0
+          },
+          "scenario_3": {
+            "insiders": 10,
+            "caught": 10,
+            "median_delay_days": 0.0
+          },
+          "caught_total": 48,
+          "insiders_total": 70,
+          "reviews_total": 4404,
+          "reviews_on_malicious_days": 122,
+          "reviewed_during_incident_total": 52
+        }
+      }
+    },
+    "peer": {
+      "user_level": {
+        "roc_auc": 0.8271413026581688,
+        "insiders_in_top_10": 6,
+        "insiders_in_top_25": 14,
+        "insiders_in_top_50": 18,
+        "insiders_in_top_100": 29
+      },
+      "day_level": {
+        "average_precision": 0.0116831832922858,
+        "roc_auc": 0.822875524208742
+      },
+      "daily_budget": {
+        "5": {
+          "budget_per_day": 5,
+          "scenario_1": {
+            "insiders": 30,
+            "caught": 4,
+            "median_delay_days": 0.0
+          },
+          "scenario_2": {
+            "insiders": 30,
+            "caught": 1,
+            "median_delay_days": 24.0
+          },
+          "scenario_3": {
+            "insiders": 10,
+            "caught": 2,
+            "median_delay_days": 0.0
+          },
+          "caught_total": 7,
+          "insiders_total": 70,
+          "reviews_total": 2200,
+          "reviews_on_malicious_days": 10,
+          "reviewed_during_incident_total": 8
+        },
+        "10": {
+          "budget_per_day": 10,
+          "scenario_1": {
+            "insiders": 30,
+            "caught": 4,
+            "median_delay_days": 0.0
+          },
+          "scenario_2": {
+            "insiders": 30,
+            "caught": 2,
+            "median_delay_days": 14.5
+          },
+          "scenario_3": {
+            "insiders": 10,
+            "caught": 2,
+            "median_delay_days": 0.0
+          },
+          "caught_total": 8,
+          "insiders_total": 70,
+          "reviews_total": 4400,
+          "reviews_on_malicious_days": 12,
+          "reviewed_during_incident_total": 9
+        }
+      }
+    },
+    "iforest": {
+      "user_level": {
+        "roc_auc": 0.8681486087362039,
+        "insiders_in_top_10": 7,
+        "insiders_in_top_25": 18,
+        "insiders_in_top_50": 30,
+        "insiders_in_top_100": 39
+      },
+      "day_level": {
+        "average_precision": 0.014063332383970428,
+        "roc_auc": 0.828539331194332
+      },
+      "daily_budget": {
+        "5": {
+          "budget_per_day": 5,
+          "scenario_1": {
+            "insiders": 30,
+            "caught": 17,
+            "median_delay_days": 0.0
+          },
+          "scenario_2": {
+            "insiders": 30,
+            "caught": 2,
+            "median_delay_days": 7.0
+          },
+          "scenario_3": {
+            "insiders": 10,
+            "caught": 10,
+            "median_delay_days": 0.0
+          },
+          "caught_total": 29,
+          "insiders_total": 70,
+          "reviews_total": 2204,
+          "reviews_on_malicious_days": 50,
+          "reviewed_during_incident_total": 32
+        },
+        "10": {
+          "budget_per_day": 10,
+          "scenario_1": {
+            "insiders": 30,
+            "caught": 23,
+            "median_delay_days": 0.0
+          },
+          "scenario_2": {
+            "insiders": 30,
+            "caught": 8,
+            "median_delay_days": 30.0
+          },
+          "scenario_3": {
+            "insiders": 10,
+            "caught": 10,
+            "median_delay_days": 0.0
+          },
+          "caught_total": 41,
+          "insiders_total": 70,
+          "reviews_total": 4404,
+          "reviews_on_malicious_days": 92,
+          "reviewed_during_incident_total": 43
+        }
+      }
+    },
+    "ensemble": {
+      "user_level": {
+        "roc_auc": 0.873387222135862,
+        "insiders_in_top_10": 9,
+        "insiders_in_top_25": 12,
+        "insiders_in_top_50": 25,
+        "insiders_in_top_100": 29
+      },
+      "day_level": {
+        "average_precision": 0.020024122325532467,
+        "roc_auc": 0.8517257956047062
+      },
+      "daily_budget": {
+        "5": {
+          "budget_per_day": 5,
+          "scenario_1": {
+            "insiders": 30,
+            "caught": 9,
+            "median_delay_days": 0.0
+          },
+          "scenario_2": {
+            "insiders": 30,
+            "caught": 12,
+            "median_delay_days": 32.5
+          },
+          "scenario_3": {
+            "insiders": 10,
+            "caught": 7,
+            "median_delay_days": 0.0
+          },
+          "caught_total": 28,
+          "insiders_total": 70,
+          "reviews_total": 2204,
+          "reviews_on_malicious_days": 46,
+          "reviewed_during_incident_total": 33
+        },
+        "10": {
+          "budget_per_day": 10,
+          "scenario_1": {
+            "insiders": 30,
+            "caught": 9,
+            "median_delay_days": 0.0
+          },
+          "scenario_2": {
+            "insiders": 30,
+            "caught": 19,
+            "median_delay_days": 15.0
+          },
+          "scenario_3": {
+            "insiders": 10,
+            "caught": 8,
+            "median_delay_days": 0.0
+          },
+          "caught_total": 36,
+          "insiders_total": 70,
+          "reviews_total": 4404,
+          "reviews_on_malicious_days": 83,
+          "reviewed_during_incident_total": 41
+        }
+      }
+    }
+  },
+  "review_cards": [
+    {
+      "scenario": 1,
+      "insider": "A",
+      "days_after_first_malicious_day": 0,
+      "ensemble_rank": 13,
+      "top_features": [
+        {
+          "feature": "after-hours logons",
+          "value": 1.0,
+          "own_median": 0.0,
+          "peer_median": 0.0,
+          "own_z": 1.0,
+          "peer_z": 1.0
+        },
+        {
+          "feature": "weekend logons",
+          "value": 1.0,
+          "own_median": 0.0,
+          "peer_median": 1.5,
+          "own_z": 1.0,
+          "peer_z": -0.28714346530438484
+        },
+        {
+          "feature": "removable-drive connections",
+          "value": 1.0,
+          "own_median": 0.0,
+          "peer_median": 0.0,
+          "own_z": 1.0,
+          "peer_z": 0.6426869938065745
+        }
+      ]
+    },
+    {
+      "scenario": 2,
+      "insider": "B",
+      "days_after_first_malicious_day": 38,
+      "ensemble_rank": 2,
+      "top_features": [
+        {
+          "feature": "removable-drive connections",
+          "value": 8.0,
+          "own_median": 2.0,
+          "peer_median": 0.0,
+          "own_z": 3.445721583652618,
+          "peer_z": 8.0
+        },
+        {
+          "feature": "files copied",
+          "value": 3.0,
+          "own_median": 2.0,
+          "peer_median": 0.0,
+          "own_z": 0.26456167876054126,
+          "peer_z": 3.0
+        },
+        {
+          "feature": ".exe files copied",
+          "value": 1.0,
+          "own_median": 0.0,
+          "peer_median": 0.0,
+          "own_z": 1.0,
+          "peer_z": 1.0
+        }
+      ]
+    },
+    {
+      "scenario": 3,
+      "insider": "C",
+      "days_after_first_malicious_day": 0,
+      "ensemble_rank": 11,
+      "top_features": [
+        {
+          "feature": "never-visited web domains",
+          "value": 3.0,
+          "own_median": 0.0,
+          "peer_median": 0.0,
+          "own_z": 3.0,
+          "peer_z": 3.0
+        },
+        {
+          "feature": "removable-drive connections",
+          "value": 2.0,
+          "own_median": 0.0,
+          "peer_median": 0.0,
+          "own_z": 2.0,
+          "peer_z": 0.8056136160047775
+        },
+        {
+          "feature": "e-mails sent",
+          "value": 13.0,
+          "own_median": 11.0,
+          "peer_median": 11.0,
+          "own_z": 1.1485738612175393,
+          "peer_z": 2.0
+        }
+      ]
+    }
+  ],
+  "artifact_audit": {
+    "scored_user_days_with_a_never_visited_domain": 0.1229,
+    "web_request_count": {
+      "users": 1000,
+      "same_count_every_browsing_day_during_warmup": 1000,
+      "mean_requests_per_browsing_day_during_warmup": 86.1,
+      "users_whose_count_ever_changes": 88,
+      "insiders_among_them": 70,
+      "insiders_total": 70
+    },
+    "share_of_users_flat_during_warmup": {
+      "n_logon": 0.564,
+      "n_logon_after_hours": 0.858,
+      "n_logon_weekend": 0.888,
+      "n_pc": 0.694,
+      "n_logon_other_pc": 0.695,
+      "n_usb": 0.771,
+      "n_usb_after_hours": 0.957,
+      "n_file": 0.771,
+      "n_file_exe": 0.866,
+      "n_file_after_hours": 0.96,
+      "n_email": 0.056,
+      "n_email_external": 0.0,
+      "n_attachments": 0.198,
+      "email_kb": 0.0,
+      "n_http": 0.958,
+      "n_http_new_domains": 0.0
+    }
+  },
+  "with_web_request_count": {
+    "self": {
+      "user_level": {
+        "roc_auc": 0.9233172703248873,
+        "insiders_in_top_10": 9,
+        "insiders_in_top_25": 15,
+        "insiders_in_top_50": 29,
+        "insiders_in_top_100": 48
+      },
+      "daily_budget": {
+        "10": {
+          "budget_per_day": 10,
+          "scenario_1": {
+            "insiders": 30,
+            "caught": 13,
+            "median_delay_days": 0.0
+          },
+          "scenario_2": {
+            "insiders": 30,
+            "caught": 30,
+            "median_delay_days": 0.0
+          },
+          "scenario_3": {
+            "insiders": 10,
+            "caught": 10,
+            "median_delay_days": 0.0
+          },
+          "caught_total": 53,
+          "insiders_total": 70,
+          "reviews_total": 4404,
+          "reviews_on_malicious_days": 285
+        }
+      }
+    },
+    "peer": {
+      "user_level": {
+        "roc_auc": 0.8528447069796362,
+        "insiders_in_top_10": 6,
+        "insiders_in_top_25": 14,
+        "insiders_in_top_50": 18,
+        "insiders_in_top_100": 33
+      },
+      "daily_budget": {
+        "10": {
+          "budget_per_day": 10,
+          "scenario_1": {
+            "insiders": 30,
+            "caught": 4,
+            "median_delay_days": 0.0
+          },
+          "scenario_2": {
+            "insiders": 30,
+            "caught": 2,
+            "median_delay_days": 14.5
+          },
+          "scenario_3": {
+            "insiders": 10,
+            "caught": 2,
+            "median_delay_days": 0.0
+          },
+          "caught_total": 8,
+          "insiders_total": 70,
+          "reviews_total": 4400,
+          "reviews_on_malicious_days": 12
+        }
+      }
+    },
+    "iforest": {
+      "user_level": {
+        "roc_auc": 0.8124514223534898,
+        "insiders_in_top_10": 7,
+        "insiders_in_top_25": 18,
+        "insiders_in_top_50": 25,
+        "insiders_in_top_100": 33
+      },
+      "daily_budget": {
+        "10": {
+          "budget_per_day": 10,
+          "scenario_1": {
+            "insiders": 30,
+            "caught": 22,
+            "median_delay_days": 0.0
+          },
+          "scenario_2": {
+            "insiders": 30,
+            "caught": 8,
+            "median_delay_days": 30.0
+          },
+          "scenario_3": {
+            "insiders": 10,
+            "caught": 10,
+            "median_delay_days": 0.0
+          },
+          "caught_total": 40,
+          "insiders_total": 70,
+          "reviews_total": 4404,
+          "reviews_on_malicious_days": 88
+        }
+      }
+    },
+    "ensemble": {
+      "user_level": {
+        "roc_auc": 0.8820068397326287,
+        "insiders_in_top_10": 9,
+        "insiders_in_top_25": 12,
+        "insiders_in_top_50": 25,
+        "insiders_in_top_100": 34
+      },
+      "daily_budget": {
+        "10": {
+          "budget_per_day": 10,
+          "scenario_1": {
+            "insiders": 30,
+            "caught": 12,
+            "median_delay_days": 0.0
+          },
+          "scenario_2": {
+            "insiders": 30,
+            "caught": 22,
+            "median_delay_days": 2.5
+          },
+          "scenario_3": {
+            "insiders": 10,
+            "caught": 9,
+            "median_delay_days": 0.0
+          },
+          "caught_total": 43,
+          "insiders_total": 70,
+          "reviews_total": 4404,
+          "reviews_on_malicious_days": 137
+        }
+      }
+    }
+  }
+}

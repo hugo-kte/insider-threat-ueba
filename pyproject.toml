@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ueba"
+version = "0.1.0"
+description = "Insider-threat UEBA on the CERT r4.2 dataset: own-history and peer-group baselines, Isolation Forest, evaluated as an analyst's daily review budget."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [{ name = "Hugo" }]
+keywords = ["ueba", "insider-threat", "anomaly-detection", "cert", "security-analytics"]
+dependencies = [
+    "pandas>=2.2",
+    "pyarrow>=15",
+    "numpy>=1.26",
+    "scikit-learn>=1.5",
+    "matplotlib>=3.8",
+    "typer>=0.12",
+    "rich>=13.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pytest-cov>=5.0", "ruff==0.17.0"]
+
+[project.scripts]
+ueba = "ueba.cli:app"
+
+[project.urls]
+Repository = "https://github.com/hugo-kte/insider-threat-ueba"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ueba"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF", "N"]
+ignore = ["RUF001", "RUF002", "RUF003", "N803", "N806"]
+
+[tool.coverage.run]
+source = ["ueba"]
